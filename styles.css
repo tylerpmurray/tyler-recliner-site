@@ -6,51 +6,102 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
+    background-color: white;
 }
 
 h2{
-    margin: 100px 0 100px 0;
+    margin: 10px 0 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 
 /*Nav Section*/
-nav {
+
+#logo{
+    text-align: left;
+    flex: 2;
+    padding-left: 35px;
+
+}
+#logo img{
+    width: 45px;
+    height: 45px;
+    position: relative;
+
+}
+
+#flex0 {
     display: flex;
     flex-direction: row;
-    height: 40px;
-    justify-content: center;
+    height: 75px;
+    justify-content: flex-end;
     align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-bottom: 2px solid black;
+
 }
 
-nav div{
-    width: 25%;
+#flex0 .button{
+    width: 10%;
+
 }
+
+/* nav #logo{
+    position: relative;
+    justify-self: left;
+} */
 
 /*Mission Section*/
-
+#mission h1{
+    font-size: 4rem;
+}
 #mission {
-    background-image: url("img/sm7.jpg");
+    background-image: url("img/Gradients/Gradient 12.jpg");
+    /* transform: scale(2,2); */
     width: 100%;
-    height: 1000px;
+    height: 930px;
     background-size: cover;
+    zoom: 75%;
+    border-bottom: 2px solid black;
 }
 
 #mission #banner{
-    background-color: white;
+    color: white;
     position: relative;
-    top: 50%;
+    top: 48%;
     transform: translate(0, -50%);
     padding: 20px 0 20px 0;
+    margin: auto;
+}
+
+#mission img{
+    width: 200px;
+    height: 200px;
 }
 
 
 /*Services Section*/
 
 #services {
-    margin-top: 65px;
+    padding-top: 65px;
+    padding-bottom: 100px;
+    border-bottom: 2px solid black;
 }
 
+#services h2{
+    padding-bottom: 50px;
+    font-size: 3.5rem;
+}
 
+#services h4{
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
 
 #flex1 {
     display: flex;
@@ -59,11 +110,7 @@ nav div{
 
 }
 
-#flex1 .box{
-    width: 33%;
 
-
-}
 
 .box img{
     width: 250px;
@@ -74,10 +121,22 @@ nav div{
 /*Portfolio Section */
 
 #portfolio{
-    margin-top: 100px;
+    padding-top: 65px;
+    padding-bottom: 100px;
+    background-image: url("img/Gradients/Gradient 2.jpg");
+    background-size: cover;
+    color: white;
+    
 }
 
+#portfolio a{
+    color: white;
+}
 
+#portfolio h2{
+    padding-bottom: 50px;
+    font-size: 3.5rem;
+}
 
 #flex2 {
     display: flex;
@@ -90,16 +149,70 @@ nav div{
     object-fit: cover;
 }
 
+.album h4{
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+
 
 /*Contact Section */
 
-#flex3 {
+#contact{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid black;
+}
+
+#contact h2{
+    padding-bottom: 5px;
+    font-size: 2.2rem;
+}
+#flex4 {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    /* padding: 10px; */
+    /* border-radius: 10%; */
+    /* border: 2px solid black; */
+}
+
+#flex4 img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    padding: 4px;
+}
+
+#flex4 div{
+    width: 50px;
+
+
+}
+
+/*Floating Socials*/
+#flex3 {
+    position: fixed;
+    top: 350px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    /* padding: 10px; */
+    /* border-radius: 10%; */
+    border: 2.5px solid black;
 }
 
 #flex3 img{
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+#flex3 div{
+    width: 75px;
+    padding: 7px;
+
 }
